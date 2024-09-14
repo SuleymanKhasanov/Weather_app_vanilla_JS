@@ -1,0 +1,73 @@
+.weather-01d {
+  background: linear-gradient(to bottom, #87ceeb, #4ad3e5);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-02d {
+  background: linear-gradient(to bottom, #c0c0c0, #87ceeb);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-03d {
+  background: linear-gradient(to bottom, #d3d3d3, #87cefa);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-04d {
+  background: linear-gradient(to bottom, #b0b0b0, #808080);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-09d .weather-10d {
+  background: linear-gradient(to bottom, #2f4f4f, #4682b4);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-11d {
+  background: linear-gradient(to bottom, #2f4f4f, #1e90ff);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-13d {
+  background: linear-gradient(to bottom, #a7ebeb, #1e90ff);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-50d {
+  background: linear-gradient(to bottom, #f0f0f0, #e2e2e2);
+  transition: all 0.5s ease-in-out;
+}
+
+.weather-01n {
+  background: linear-gradient(to bottom, #2e3a59, #1a1a40);
+}
+
+.weather-02n {
+  background: linear-gradient(to bottom, #2f4f4f, #1c1c1c);
+}
+
+.weather-03n {
+  background: linear-gradient(to bottom, #4a4a4a, #2c3e50);
+}
+
+.weather-04n {
+  background: linear-gradient(to bottom, #1e1e1e, #003366);
+}
+
+.weather-09n .weather-10n {
+  background: linear-gradient(
+    to bottom,
+    #2d2d2d,
+    #0f0f0f
+  ); /* Переход от темно-серого к черному */
+  background-image: radial-gradient(
+    circle,
+    #ffff00 10%,
+    transparent 10%
+  ); /* Молнии */
+  background-size: 100px 100px;
+}
+
+.weather-50n {
+  background: linear-gradient(to bottom, #2f2f2f, #1a1a1a);
+}

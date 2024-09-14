@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <header class="header">
+      <nav class="navigation">
+        <div class="logo"><a href="#" class="logo__link">W.</a></div>
+        <form id="form" class="search">
+          <input
+            type="search"
+            id="input"
+            class="search__input"
+            placeholder="Введи название города"
+          />
+          <button type="submit" id="button" class="search__btn">
+            <img src="./public/icons/search.svg" alt="search" />
+          </button>
+        </form>
+      </nav>
+    </header>
+    <main class="container">
+      <div id="content">
+        <span>
+          Что-бы узнать данные о погоде, введите название города в
+          строку поиска
+        </span>
+      </div>
+    </main>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>

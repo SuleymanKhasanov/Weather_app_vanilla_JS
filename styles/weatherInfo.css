@@ -1,0 +1,42 @@
+.weatherInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cityName {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.formatDate {
+  margin-top: 5px;
+}
+
+.temperature {
+  font-size: 96px;
+  font-weight: bold;
+  margin-top: 160px;
+}
+
+.weatherOverview {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weatherOverviewIcon {
+  width: 32px;
+}
+
+.feelsLike {
+  margin-top: 5px;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 85%;
+  text-align: center;
+  margin: 0 auto;
+}
