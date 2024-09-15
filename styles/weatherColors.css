@@ -1,41 +1,49 @@
 .weather-01d {
   background: linear-gradient(to bottom, #87ceeb, #4ad3e5);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-02d {
   background: linear-gradient(to bottom, #c0c0c0, #87ceeb);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-03d {
   background: linear-gradient(to bottom, #d3d3d3, #87cefa);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-04d {
   background: linear-gradient(to bottom, #b0b0b0, #808080);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-09d .weather-10d {
   background: linear-gradient(to bottom, #2f4f4f, #4682b4);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-11d {
   background: linear-gradient(to bottom, #2f4f4f, #1e90ff);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-13d {
   background: linear-gradient(to bottom, #a7ebeb, #1e90ff);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-50d {
   background: linear-gradient(to bottom, #f0f0f0, #e2e2e2);
   transition: all 0.5s ease-in-out;
+  color: #1a1a1a;
 }
 
 .weather-01n {

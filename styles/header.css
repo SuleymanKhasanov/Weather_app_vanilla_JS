@@ -10,7 +10,7 @@
 }
 
 .logo__link {
-  color: var(--text-color);
+  color: inherit;
   font-size: 32px;
   font-weight: bold;
 }
@@ -26,7 +26,7 @@
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: var(--blur-graduation);
-  color: var(--text-color);
+  color: inherit;
   border: none;
   height: 45px;
   font-size: 20px;
@@ -35,7 +35,7 @@
 }
 
 .search__input::placeholder {
-  color: var(--text-color);
+  color: inherit;
 }
 
 .search .search__btn {
