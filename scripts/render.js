@@ -52,7 +52,7 @@ const render = (weatherTodayData) => {
              <p class='cityName'>${name}</p>
              <p class='formatDate'>${formattedDate}</p>
               <p class='temperature'>${temperature}°</p>
-               <div class='weatherOverview'> <img alt="weather icon" src="./icons/${weatherIcon}.svg" class='weatherOverviewIcon'/> <p>${weatherForecasts}</p> </div>
+               <div class='weatherOverview'> <img alt="weather icon" src="../icons/${weatherIcon}.svg" class='weatherOverviewIcon'/> <p>${weatherForecasts}</p> </div>
               <p class='feelsLike'>Ощущается как ${feelsLike}°</p>
              
             </div>
