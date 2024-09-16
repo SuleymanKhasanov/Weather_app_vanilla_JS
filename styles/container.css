@@ -1,4 +1,7 @@
 .container {
   width: 80%;
   margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }

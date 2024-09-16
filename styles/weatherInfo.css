@@ -32,7 +32,7 @@
   margin-top: 5px;
 }
 
-span {
+.know-aboute-weather {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

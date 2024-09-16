@@ -1,5 +1,18 @@
 @media screen and (max-width: 600px) {
+  body {
+    height: 180vh !important;
+  }
   .search__input {
     width: 270px;
+  }
+  .container {
+    width: 90%;
+  }
+  .navigation {
+    padding: 15px;
+    margin-top: 15px;
+  }
+  .dailyWeatherInformation {
+    width: inherit !important;
   }
 }

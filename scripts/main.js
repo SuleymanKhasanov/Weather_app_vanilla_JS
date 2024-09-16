@@ -2,6 +2,7 @@ import { API_KEY } from '../api/apiKeys';
 
 import render from './render';
 import { content } from './render';
+import weatherDailyRenderer from './weatherDailyInformation';
 
 // Получаем элементы со страницы
 const input = document.getElementById('input');
@@ -35,10 +36,7 @@ button.addEventListener('click', () => {
           return response.json();
         })
         .then((data) => {
-          console.log(data);
-          console.log(
-            data.list.filter((_, index) => index % 8 === 5),
-          );
+          weatherDailyRenderer(data);
         });
 
       // Получаем теущий прогноз погоды
@@ -51,6 +49,7 @@ button.addEventListener('click', () => {
         .then((weatherTodayData) => {
           // Производим рендеринг компонента
           render(weatherTodayData);
+          console.log(weatherTodayData);
         });
       input.value = '';
     })

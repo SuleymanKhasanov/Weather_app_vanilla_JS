@@ -8,6 +8,9 @@ const render = (weatherTodayData) => {
   const feelsLike = Math.floor(weatherTodayData.main.feels_like);
   const weatherForecasts = weatherTodayData.weather[0].description;
   const weatherIcon = weatherTodayData.weather[0].icon;
+  const wind = weatherTodayData.wind.speed;
+
+  console.log(wind);
 
   colorTheme.setColorTheme(weatherIcon);
 
@@ -54,7 +57,7 @@ const render = (weatherTodayData) => {
               <p class='temperature'>${temperature}°</p>
                <div class='weatherOverview'> <img alt="weather icon" src="../icons/${weatherIcon}.svg" class='weatherOverviewIcon'/> <p>${weatherForecasts}</p> </div>
               <p class='feelsLike'>Ощущается как ${feelsLike}°</p>
-             
+              <div class='weatherInfo__characteristics characteristics'>
             </div>
           `;
 };
