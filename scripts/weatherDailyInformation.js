@@ -42,26 +42,29 @@ const weatherDailyRender = (data) => {
     };
   });
 
-  console.log(dailyWeatherInformation);
-
   weatherDailyContainer.innerHTML = `
-    <ul class="dailyWeatherInformation">
-    <h3 class='dailyWeatherInformation__title'>Прогноз на пять дней</h3>
+  <table class="dailyWeatherInformation">
+    <thead>
+        <th colspan="4" class='dailyWeatherInformation__title'>Прогноз на пять дней</th>
+    </thead>
+    <tbody>
       ${dailyWeatherInformation
         .map(
           (element) => `
-          <li class="dailyWeatherInformation__item">
-            <span class='dailyWeatherInformation__dayOfWeek'>${element.dayOfWeek}</span>
-            <img src="http://openweathermap.org/img/wn/${element.icon}.png" alt="${element.weatherInfo}" />
-            <span>${element.temp}°</span>
-            <span>${element.weatherInfo}</span>
-            
-          </li>
+          <tr class="dailyWeatherInformation__item">
+            <td class='dailyWeatherInformation__dayOfWeek'>${element.dayOfWeek}</td>
+            <td>
+              <img src="http://openweathermap.org/img/wn/${element.icon}.png" alt="${element.weatherInfo}" />
+            </td>
+            <td>${element.temp}°</td>
+            <td>${element.weatherInfo}</td>
+          </tr>
         `,
         )
         .join('')}
-    </ul>
-  `;
+    </tbody>
+  </table>
+`;
 };
 
 export default weatherDailyRender;

@@ -1,8 +1,8 @@
 import { API_KEY } from '../api/apiKeys';
+import getCurrentWeather from './getCurrentWeather';
+import getFiveDaysWeather from './getFiveDaysWeather';
 
-import render from './render';
-import { content } from './render';
-import weatherDailyRenderer from './weatherDailyInformation';
+import { content } from './curentWeatherRender';
 
 // Получаем элементы со страницы
 const input = document.getElementById('input');
@@ -28,30 +28,12 @@ button.addEventListener('click', () => {
     .then((locationData) => {
       const { lat, lon } = locationData[0];
 
-      // Получаем прогноз погоды на 5 дней
-      fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}`,
-      )
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          weatherDailyRenderer(data);
-        });
-
       // Получаем теущий прогноз погоды
-      fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric&lang=ru`,
-      )
-        .then((response) => {
-          return response.json();
-        })
-        .then((weatherTodayData) => {
-          // Производим рендеринг компонента
-          render(weatherTodayData);
-          console.log(weatherTodayData);
-        });
+      getCurrentWeather(lat, lon);
       input.value = '';
+
+      // Получаем прогноз погоды на 5 дней
+      getFiveDaysWeather(lat, lon);
     })
     .catch((reject) => {
       content.innerHTML = `

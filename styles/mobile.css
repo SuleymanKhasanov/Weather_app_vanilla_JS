@@ -1,7 +1,4 @@
 @media screen and (max-width: 600px) {
-  body {
-    height: 180vh !important;
-  }
   .search__input {
     width: 270px;
   }
@@ -13,6 +10,6 @@
     margin-top: 15px;
   }
   .dailyWeatherInformation {
-    width: inherit !important;
+    width: 100% !important;
   }
 }

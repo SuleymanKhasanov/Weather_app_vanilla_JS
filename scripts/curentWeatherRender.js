@@ -2,15 +2,15 @@ import colorTheme from './colorTheme';
 
 export const content = document.getElementById('content');
 
-const render = (weatherTodayData) => {
+const currentWeatherRender = (weatherTodayData) => {
   const temperature = Math.floor(weatherTodayData.main.temp);
   const name = weatherTodayData.name;
   const feelsLike = Math.floor(weatherTodayData.main.feels_like);
   const weatherForecasts = weatherTodayData.weather[0].description;
   const weatherIcon = weatherTodayData.weather[0].icon;
-  const wind = weatherTodayData.wind.speed;
-
-  console.log(wind);
+  const wind = Math.floor(weatherTodayData.wind.speed);
+  const humidity = weatherTodayData.main.humidity;
+  const visibility = weatherTodayData.visibility / 1000;
 
   colorTheme.setColorTheme(weatherIcon);
 
@@ -51,15 +51,19 @@ const render = (weatherTodayData) => {
   const formattedDate = formatDate(currentDate);
 
   content.innerHTML = `
-            <div class='weatherInfo'>
-             <p class='cityName'>${name}</p>
-             <p class='formatDate'>${formattedDate}</p>
-              <p class='temperature'>${temperature}°</p>
-               <div class='weatherOverview'> <img alt="weather icon" src="http://openweathermap.org/img/wn/${weatherIcon}.png" class='weatherOverviewIcon'/> <p>${weatherForecasts}</p> </div>
-              <p class='feelsLike'>Ощущается как ${feelsLike}°</p>
-              <div class='weatherInfo__characteristics characteristics'>
-            </div>
-          `;
+  <div class='weatherInfo'>
+   <p class='cityName'>${name}</p>
+   <p class='formatDate'>${formattedDate}</p>
+    <p class='temperature'>${temperature}°</p>
+     <div class='weatherOverview'> <img alt="weather icon" src="http://openweathermap.org/img/wn/${weatherIcon}.png" class='weatherOverviewIcon'/> <p>${weatherForecasts}</p> </div>
+    <p class='feelsLike'>Ощущается как ${feelsLike}°</p>
+    <ul class='weatherCarasteristics'> 
+    <li class='weatherCarasteristicsList'><i class="fas fa-wind"></i>  <br/> ${wind} км/час</li> 
+    <li class='weatherCarasteristicsList'><i class="fas fa-tint"></i> <br/>${humidity}%</li> 
+    <li class='weatherCarasteristicsList'><i class="fa-solid fa-eye"></i> <br/>${visibility}км</li> 
+    </ul>
+  </div>
+`;
 };
 
-export default render;
+export default currentWeatherRender;
