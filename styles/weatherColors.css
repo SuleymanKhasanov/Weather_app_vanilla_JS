@@ -26,7 +26,7 @@
 .weather-10d {
   background: linear-gradient(to bottom, #2f4f4f, #4682b4);
   transition: all 0.5s ease-in-out;
-  color: #1a1a1a;
+  color: #ffffff;
 }
 
 .weather-11d {
@@ -76,6 +76,7 @@
     transparent 10%
   );
   background-size: 100px 100px;
+  color: #ffffff;
 }
 
 .weather-50n {

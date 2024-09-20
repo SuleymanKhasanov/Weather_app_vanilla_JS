@@ -16,6 +16,7 @@ const weatherDailyRender = (data) => {
     'heavy intensity rain': 'Cильный дождь',
     'light rain': 'Небольшой дождь',
     'moderate rain': 'Умеренный дождь',
+    'light snow': 'Легкий снег',
   };
 
   const filteredData = data.list.filter(

@@ -1,4 +1,6 @@
 import colorTheme from './colorTheme';
+import { rainDropBg } from './rainDropBg';
+import { clearRainDrops } from './rainDropBg';
 
 export const content = document.getElementById('content');
 
@@ -13,6 +15,17 @@ const currentWeatherRender = (weatherTodayData) => {
   const visibility = weatherTodayData.visibility / 1000;
 
   colorTheme.setColorTheme(weatherIcon);
+
+  if (
+    weatherIcon === '09d' ||
+    weatherIcon === '09n' ||
+    weatherIcon === '10n' ||
+    weatherIcon === '10d'
+  ) {
+    rainDropBg();
+  } else {
+    clearRainDrops();
+  }
 
   const forecasts =
     weatherForecasts.charAt(0).toUpperCase() +
