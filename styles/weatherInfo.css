@@ -58,3 +58,12 @@
   color: inherit;
   width: 62px;
 }
+
+.loader__img {
+  width: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}

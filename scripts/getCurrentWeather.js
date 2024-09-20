@@ -12,6 +12,7 @@ const getCurrentWeather = async (lat, lon) => {
     }
 
     const weatherTodayData = await response.json();
+    console.log(weatherTodayData);
 
     // Рендерим компонент с данными о погоде
     currentWeatherRender(weatherTodayData);

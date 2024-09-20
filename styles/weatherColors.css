@@ -65,17 +65,7 @@
 
 .weather-09n,
 .weather-10n {
-  background: linear-gradient(
-    to bottom,
-    #2d2d2d,
-    #0f0f0f
-  ); /* Переход от темно-серого к черному */
-  background-image: radial-gradient(
-    circle,
-    #ffff00 10%,
-    transparent 10%
-  );
-  background-size: 100px 100px;
+  background: linear-gradient(to bottom, #2d2d2d, #0f0f0f);
   color: #ffffff;
 }
 
