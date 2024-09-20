@@ -15,6 +15,7 @@ const weatherDailyRender = (data) => {
     'overcast clouds': 'Пасмурные облака',
     'heavy intensity rain': 'Cильный дождь',
     'light rain': 'Небольшой дождь',
+    'moderate rain': 'Умеренный дождь',
   };
 
   const filteredData = data.list.filter(

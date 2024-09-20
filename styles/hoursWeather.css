@@ -1,0 +1,24 @@
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hours-weather {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 20px;
+  scrollbar-width: none;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: var(--blur-graduation);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hours-weather__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

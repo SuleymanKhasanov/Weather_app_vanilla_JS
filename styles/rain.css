@@ -1,0 +1,65 @@
+.weather-09d::before,
+.weather-10d::before,
+.weather-09n::before,
+.weather-10n::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 10%,
+    transparent 10%
+  );
+  background-size: 5px 5px;
+  animation: rainEffect 0.5s infinite;
+}
+
+@keyframes rainEffect {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 100vh;
+  }
+}
+
+/* Анимация для капель дождя */
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 2px;
+  height: 20px;
+  background: rgba(227, 227, 227, 0.6);
+  animation: fall linear infinite;
+  z-index: -5;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* Добавляем несколько капель дождя с разной скоростью */
+.rain-background .drop:nth-child(1) {
+  left: 20%;
+  animation-duration: 1.5s;
+}
+
+.rain-background .drop:nth-child(2) {
+  left: 40%;
+  animation-duration: 1s;
+}
+
+.rain-background .drop:nth-child(3) {
+  left: 60%;
+  animation-duration: 1.8s;
+}
+
+.rain-background .drop:nth-child(4) {
+  left: 80%;
+  animation-duration: 1.2s;
+}

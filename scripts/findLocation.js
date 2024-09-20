@@ -6,5 +6,4 @@ fetch(
   })
   .then((locationData) => {
     const { lat, lon } = locationData[0];
-
-  }
+  });

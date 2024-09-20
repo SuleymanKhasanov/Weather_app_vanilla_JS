@@ -22,7 +22,8 @@
   color: #1a1a1a;
 }
 
-.weather-09d .weather-10d {
+.weather-09d,
+.weather-10d {
   background: linear-gradient(to bottom, #2f4f4f, #4682b4);
   transition: all 0.5s ease-in-out;
   color: #1a1a1a;
@@ -62,7 +63,8 @@
   background: linear-gradient(to bottom, #1e1e1e, #003366);
 }
 
-.weather-09n .weather-10n {
+.weather-09n,
+.weather-10n {
   background: linear-gradient(
     to bottom,
     #2d2d2d,
@@ -72,7 +74,7 @@
     circle,
     #ffff00 10%,
     transparent 10%
-  ); /* Молнии */
+  );
   background-size: 100px 100px;
 }
 

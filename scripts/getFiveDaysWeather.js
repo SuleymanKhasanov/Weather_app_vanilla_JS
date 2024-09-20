@@ -1,4 +1,5 @@
 import { API_KEY } from '../api/apiKeys';
+import hoursWeatherRender from './hoursWeatherRender';
 import weatherDailyRenderer from './weatherDailyInformation';
 
 const getFiveDaysWeather = (lat, lon) => {
@@ -10,6 +11,7 @@ const getFiveDaysWeather = (lat, lon) => {
     })
     .then((data) => {
       weatherDailyRenderer(data);
+      hoursWeatherRender(data);
     });
 };
 

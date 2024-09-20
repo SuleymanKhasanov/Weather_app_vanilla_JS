@@ -27,31 +27,40 @@
     <title>Document</title>
   </head>
   <body id="body">
-    <header class="header">
-      <nav class="navigation">
-        <div class="logo"><a href="#" class="logo__link">W.</a></div>
-        <form id="form" class="search">
-          <input
-            type="search"
-            id="input"
-            class="search__input"
-            placeholder="Введите название города"
-          />
-          <button type="submit" id="button" class="search__btn">
-            <i class="fa-solid fa-magnifying-glass search__icon"></i>
-          </button>
-        </form>
-      </nav>
-    </header>
-    <main class="container">
-      <div id="content" class="cerrent-wether">
-        <span class="know-aboute-weather">
-          Что-бы узнать данные о погоде, введите название города в
-          строку поиска
-        </span>
-      </div>
-      <div class="wether-daily" id="weather-daily"></div>
-    </main>
+    <div id="rain-background" class="rain-background">
+      <header class="header">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="#" class="logo__link">W.</a>
+          </div>
+          <form id="form" class="search">
+            <input
+              type="search"
+              id="input"
+              class="search__input"
+              placeholder="Введите название города"
+            />
+            <button type="submit" id="button" class="search__btn">
+              <i
+                class="fa-solid fa-magnifying-glass search__icon"
+              ></i>
+            </button>
+          </form>
+        </nav>
+      </header>
+      <main class="container">
+        <div id="content" class="cerrent-wether">
+          <span class="know-aboute-weather">
+            Что-бы узнать данные о погоде, введите название города в
+            строку поиска
+          </span>
+        </div>
+        <div class="weather-info">
+          <div id="hours-weather"></div>
+          <div class="wether-daily" id="weather-daily"></div>
+        </div>
+      </main>
+    </div>
 
     <script src="./scripts/main.js" type="module"></script>
   </body>

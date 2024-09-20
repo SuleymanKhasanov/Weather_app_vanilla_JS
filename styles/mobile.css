@@ -6,10 +6,16 @@
     width: 90%;
   }
   .navigation {
-    padding: 15px;
+    padding: 5px;
     margin-top: 15px;
   }
   .dailyWeatherInformation {
     width: 100% !important;
+  }
+  .hours-weather {
+    width: 370px !important;
+  }
+  .weather-info {
+    margin-top: 30px;
   }
 }

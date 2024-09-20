@@ -14,6 +14,10 @@ const currentWeatherRender = (weatherTodayData) => {
 
   colorTheme.setColorTheme(weatherIcon);
 
+  const forecasts =
+    weatherForecasts.charAt(0).toUpperCase() +
+    weatherForecasts.slice(1);
+
   function formatDate(date) {
     const daysOfWeek = [
       'Воскресенье',
@@ -55,12 +59,12 @@ const currentWeatherRender = (weatherTodayData) => {
    <p class='cityName'>${name}</p>
    <p class='formatDate'>${formattedDate}</p>
     <p class='temperature'>${temperature}°</p>
-     <div class='weatherOverview'> <img alt="weather icon" src="http://openweathermap.org/img/wn/${weatherIcon}.png" class='weatherOverviewIcon'/> <p>${weatherForecasts}</p> </div>
+     <div class='weatherOverview'> <img alt="weather icon" src="http://openweathermap.org/img/wn/${weatherIcon}.png" class='weatherOverviewIcon'/> <p>${forecasts}</p> </div>
     <p class='feelsLike'>Ощущается как ${feelsLike}°</p>
     <ul class='weatherCarasteristics'> 
-    <li class='weatherCarasteristicsList'><i class="fas fa-wind"></i>  <br/> ${wind} км/час</li> 
-    <li class='weatherCarasteristicsList'><i class="fas fa-tint"></i> <br/>${humidity}%</li> 
-    <li class='weatherCarasteristicsList'><i class="fa-solid fa-eye"></i> <br/>${visibility}км</li> 
+    <li class='weatherCarasteristicsList'><i class="fas fa-wind weather-mini-icon"></i>  <br/> ${wind} м/с</li> 
+    <li class='weatherCarasteristicsList'><i class="fas fa-tint weather-mini-icon"></i> <br/>${humidity} %</li> 
+    <li class='weatherCarasteristicsList'><i class="fa-solid fa-eye  weather-mini-icon"></i> <br/>${visibility} км</li> 
     </ul>
   </div>
 `;
