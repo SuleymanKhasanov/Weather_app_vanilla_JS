@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
+      crossorigin="asnonymous"
       referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,15 +24,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Document</title>
+    <title>Weather app</title>
   </head>
   <body id="body">
     <div id="rain-background" class="rain-background">
+      <menu id="history">
+        <button id="close-btn" class="close-btn">
+          <i class="fa-solid fa-xmark close-menu-btn"></i>
+        </button>
+        <div class="container">
+          <ul class="history__container" id="history__container">
+            Нет данныых об истории
+          </ul>
+        </div>
+      </menu>
       <header class="header">
         <nav class="navigation">
-          <div class="logo">
-            <a href="#" class="logo__link">W.</a>
+          <div class="controls-container">
+            <button class="hamburger-menu" id="hamburger-menu">
+              <i class="fa-solid fa-bars hamburger-menu__icon"></i>
+            </button>
+            <div class="logo">
+              <a href="#" class="logo__link">W.</a>
+            </div>
           </div>
+
           <form id="form" class="search">
             <input
               type="search"

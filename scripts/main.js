@@ -9,6 +9,10 @@ import findCurrentLocation from './findCurrentLocation';
 const input = document.getElementById('input');
 const form = document.getElementById('form');
 const button = document.getElementById('button');
+const histotyMenuBtn = document.getElementById('hamburger-menu');
+const historyMenu = document.getElementById('history');
+const historyMenuCloseBtn = document.getElementById('close-btn');
+const body = document.getElementById('body');
 
 // Отключаем событие перехода на друние страницы
 form.addEventListener('submit', (e) => {
@@ -17,6 +21,16 @@ form.addEventListener('submit', (e) => {
 
 //Получаем прогноз погоды по текущему местоположению
 findCurrentLocation();
+
+histotyMenuBtn.addEventListener('click', () => {
+  historyMenu.style.top = 0;
+  body.style.overflowY = 'hidden';
+});
+
+historyMenuCloseBtn.addEventListener('click', () => {
+  historyMenu.style.top = '-100vh';
+  body.style.overflowY = 'auto';
+});
 
 // Обрабатываем событие по клику
 button.addEventListener('click', () => {

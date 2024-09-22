@@ -9,6 +9,22 @@
   padding: 20px;
 }
 
+.controls-container {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger-menu {
+  background-color: inherit;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+.hamburger-menu__icon {
+  color: inherit;
+  font-size: 25px;
+}
+
 .logo__link {
   color: inherit;
   font-size: 32px;

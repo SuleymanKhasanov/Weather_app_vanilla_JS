@@ -30,3 +30,71 @@ input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
 }
+
+#history {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+}
+
+#close-btn {
+  border: none;
+  color: inherit;
+  margin: 25px 28px;
+  background-color: inherit !important;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.close-menu-btn {
+  font-size: 25px;
+  padding: 5px;
+  background-color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.history__container {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: left;
+  overflow-y: auto;
+}
+
+.history__item {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-weight: bold;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.cityNameHistory {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.cityTemperatureHistory {
+  display: flex;
+  align-items: center;
+}
+
+.cityImgHistory {
+  width: 50px;
+}
+
+.cityTextHistory {
+  font-size: 30px;
+}

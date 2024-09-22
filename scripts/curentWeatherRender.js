@@ -1,6 +1,7 @@
 import colorTheme from './colorTheme';
 import { rainDropBg } from './rainDropBg';
 import { clearRainDrops } from './rainDropBg';
+import saveDataOnLocalStorage from './localStorage';
 
 export const content = document.getElementById('content');
 
@@ -12,7 +13,9 @@ const currentWeatherRender = (weatherTodayData) => {
   const weatherIcon = weatherTodayData.weather[0].icon;
   const wind = Math.floor(weatherTodayData.wind.speed);
   const humidity = weatherTodayData.main.humidity;
-  const visibility = weatherTodayData.visibility / 1000;
+  const visibility = Math.floor(weatherTodayData.visibility / 1000);
+
+  saveDataOnLocalStorage({ name, temperature, weatherIcon });
 
   colorTheme.setColorTheme(weatherIcon);
 

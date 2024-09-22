@@ -1,3 +1,26 @@
+@media screen and (max-width: 900px) {
+  .dailyWeatherInformation {
+    width: 100% !important;
+  }
+  .hours-weather {
+    width: 680px !important;
+  }
+  .weather-info {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dailyWeatherInformation {
+    width: 100% !important;
+  }
+  .hours-weather {
+    width: 600px !important;
+  }
+  .weather-info {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 600px) {
   .search__input {
     width: 270px;
@@ -13,9 +36,57 @@
     width: 100% !important;
   }
   .hours-weather {
-    width: 370px !important;
+    width: 485px !important;
   }
   .weather-info {
     margin-top: 30px;
+  }
+
+  .history__container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hours-weather {
+    width: 385px !important;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .hours-weather {
+    width: 370px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 95%;
+  }
+  .hours-weather {
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .container {
+    width: 95%;
+  }
+  .hours-weather {
+    width: 370px !important;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .container {
+    width: 95%;
+  }
+  .search__input {
+    width: 250px;
+  }
+  .dailyWeatherInformation {
+    width: 98% !important;
+  }
+  .hours-weather {
+    width: 320px !important;
   }
 }
