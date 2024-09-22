@@ -29,12 +29,17 @@
   <body id="body">
     <div id="rain-background" class="rain-background">
       <menu id="history">
-        <button id="close-btn" class="close-btn">
-          <i class="fa-solid fa-xmark close-menu-btn"></i>
-        </button>
+        <div class="history__actions">
+          <button id="close-btn" class="close-btn">
+            <i class="fa-solid fa-xmark close-menu-btn"></i>
+          </button>
+          <button id="clear-history" class="clear-history">
+            Очистить
+          </button>
+        </div>
         <div class="container">
           <ul class="history__container" id="history__container">
-            Нет данныых об истории
+            <span class="empty-text">Нет данных о городах</span>
           </ul>
         </div>
       </menu>
@@ -80,6 +85,17 @@
         </div>
       </main>
     </div>
+    <footer class="footer">
+      <span class="author"
+        >Разработал:
+        <a
+          href="https://github.com/SuleymanKhasanov"
+          class="author__link"
+        >
+          @SuleymanKhasanov
+        </a>
+      </span>
+    </footer>
 
     <script src="./scripts/main.js" type="module"></script>
   </body>

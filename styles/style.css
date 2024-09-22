@@ -24,6 +24,9 @@ body {
   min-height: 100vh;
   font-size: 20px;
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 input[type='search']::-webkit-search-cancel-button {
@@ -97,4 +100,42 @@ input[type='search']::-webkit-search-cancel-button {
 
 .cityTextHistory {
   font-size: 30px;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.author {
+  font-size: 16px;
+}
+
+.author__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.empty-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.clear-history {
+  font-size: 20px;
+  border-radius: 8px;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 25px 28px;
+}
+
+.history__actions {
+  display: flex;
+  justify-content: space-between;
 }

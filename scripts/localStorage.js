@@ -1,4 +1,9 @@
 import historyRender from './historyRender';
+const historyContainer = document.getElementById(
+  'history__container',
+);
+
+const clearHistoryBtn = document.getElementById('clear-history');
 
 const saveDataOnLocalStorage = (data) => {
   let arrayData =
@@ -21,3 +26,8 @@ const saveDataOnLocalStorage = (data) => {
 };
 
 export default saveDataOnLocalStorage;
+
+clearHistoryBtn.addEventListener('click', () => {
+  localStorage.clear();
+  historyContainer.innerHTML = `<span class="empty-text">Нет данных о городах</span>`;
+});

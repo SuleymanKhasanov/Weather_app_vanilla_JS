@@ -53,7 +53,7 @@
   }
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 430px) {
   .hours-weather {
     width: 370px !important;
   }
