@@ -1,4 +1,4 @@
-import { API_KEY } from '../api/apiKeys';
+import { API_KEY } from '../constants/apiKeys';
 import getCurrentWeather from './getCurrentWeather';
 import getFiveDaysWeather from './getFiveDaysWeather';
 

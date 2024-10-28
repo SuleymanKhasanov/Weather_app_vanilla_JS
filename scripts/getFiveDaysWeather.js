@@ -1,4 +1,4 @@
-import { API_KEY } from '../api/apiKeys';
+import { API_KEY } from '../constants/apiKeys';
 import hoursWeatherRender from './hoursWeatherRender';
 import weatherDailyRenderer from './weatherDailyInformation';
 

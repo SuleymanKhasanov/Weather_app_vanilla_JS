@@ -2,7 +2,6 @@ const historyContainer = document.getElementById(
   'history__container',
 );
 
-console.log(historyContainer);
 const historyRender = (savedData) => {
   const historyItems = savedData
     .map((element) => {

@@ -1,4 +1,4 @@
-import { API_KEY } from '../api/apiKeys';
+import { API_KEY } from '../constants/apiKeys';
 import currentWeatherRender from './curentWeatherRender';
 
 const getCurrentWeather = async (lat, lon) => {
